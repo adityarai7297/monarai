@@ -8,6 +8,10 @@ body {
 
 }
 
+p{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
 /* ------------------------------- Modal Blur Styling --------------------------------*/
 
 
@@ -421,6 +425,12 @@ h2.background span {
   border-radius: 30px;
 }
 
+.service-img{
+  width: 93%;
+  min-width: 500px;
+  border-radius: 20px;
+}
+
 .service-content-wrapper{
     text-align: left;
 
@@ -774,7 +784,7 @@ z-index:2;
 
 
   .title-img-mobile{
-    width:350px;
+    width:450px;
 }
 
   .title-heading {
@@ -794,7 +804,7 @@ z-index:2;
     font-weight: 100;
     font-size: 1rem;
     line-height: 1.5;
-    width: 95%;
+    width: 90%;
     color: #000
 
   }
@@ -942,6 +952,11 @@ z-index:2;
     line-height: 1.5;
     width: 90%;
     color: #000;
+
+  }
+
+  .service-img{
+    width:98%;
 
   }
 
