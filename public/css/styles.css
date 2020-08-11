@@ -428,6 +428,7 @@ h2.background span {
 .service-img{
   width: 93%;
   min-width: 500px;
+  padding: 2%;
   border-radius: 20px;
 }
 
