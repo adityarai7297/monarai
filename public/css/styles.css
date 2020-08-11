@@ -615,7 +615,7 @@ z-index:2;
 #testimonials p.comment{
   width: 90%;
   text-align: left;
-  line-height: 2;
+  line-height: 1.5;
   margin: auto;
   margin-top: 20px;
   margin-bottom: 20px;
@@ -1111,7 +1111,7 @@ z-index:2;
   #testimonials p.comment{
     width: 80%;
     text-align: center;
-    line-height: 2;
+    line-height: 1.5;
     margin: auto;
     margin-top: 20px;
     margin-bottom: 20px;
