@@ -1,5 +1,15 @@
 AOS.init();
 
+$('.expander').click(function(){
+  console.log("clicked");
+    $('.hidden-service-content').toggle('slow');
+    if($('.expander').text()=='Show More...'){
+      console.log('true');
+      $('.expander').text()='Show Less...';
+
+    }
+});
+
 if($(window).innerWidth > 768){
   $('body').css('padding-top', $('.navbar').outerHeight()+60 + 'px')
 }
