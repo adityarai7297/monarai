@@ -31,7 +31,7 @@
   <!-- Nav Bar -->
   <nav class="navbar smart-scroll navbar-expand-lg navbar-light ">
           <div class="navar-container" >
-            <a class="navbar-brand" href="" > <img src="images/mr4.webp" class="navbar-brand-logo" alt="brand-img"></img> <span><span style="color:#FF88B1;margin-right: 3px;">Dr.</span> Mona Rai</span></a>
+            <a class="navbar-brand" href="" > <img src="images/mr4.webp" class="navbar-brand-logo" alt="brand-img"></img> <span><span class = "word-pink">Dr.</span> Mona Rai</span></a>
           </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" data-backdrop="false">
                 <span class="navbar-toggler-icon"></span>
@@ -84,7 +84,7 @@
 
           </div>
 
-          <div class="title-img-wrapper" data-aos="zoom-out">
+          <div class="title-img-wrapper" data-aos="zoom-out" data-aos-duration="800">
             <img class="title-img" src="images/title-img.webp" alt="title logo">
           </div>
 
@@ -113,7 +113,7 @@
               <li>Service 1</li><li>Service 2</li><li>Service 3</li><li>Service 4</li>
             </ul>
           </div>
-          <button class="expander">Show More...</button>
+          <button class="expander"><i class="fas fa-angle-down fa-2x" ></i></button>
         </div>
       </div>
 
@@ -123,11 +123,21 @@
         </div>
         <div class="service-content-wrapper" data-aos="fade-right" data-aos-duration="600">
           <h4>Elderly Care</h4>
-          <p>This service is aimed at elders who live on their own. A team of qualified, experienced and dedicated specialists from various faculties will chart out personalised health care strategies in the comfort of their homes. Aiming to cut out all risk factors including personal visits to clinics in this pandemic, our services will ensure the maximum care with minimum exposure.</p></div>
+          <p>This service is aimed at elders who live on their own. A team of qualified, experienced and dedicated specialists from various faculties will chart out personalised health care strategies in the comfort of their homes. Aiming to cut out all risk factors including personal visits to clinics in this pandemic, our services will ensure the maximum care with minimum exposure.</p>
+          <div class="hidden-service-content" >
+            <ul>
+              <li>Service 1</li><li>Service 2</li><li>Service 3</li><li>Service 4</li>
+            </ul>
+          </div>
+          <button class="expander">Show More...</button>
+        </div>
+        <div class="service-img-wrapper">
+                <img src="images/elder-care-img.webp" data-aos="fade-in" data-aos-duration="800" class="service-img" alt="elder care">
+        </div>
 
-       <div class="service-img-wrapper">
-               <img src="images/elder-care-img.webp" data-aos="fade-in" data-aos-duration="800" class="service-img" alt="elder care">
-       </div>
+        </div>
+
+
       </div>
 
       <div class="service-card3-wrapper" >
@@ -138,7 +148,14 @@
 
          <div class="service-content-wrapper" data-aos="fade-left" data-aos-duration="600">
            <h4>Comfort Care</h4>
-           <p>This is aimed at providing medical, nursing and associated services to patients post surgery at hospital or residence. A team of competent medical professionals monitor all daily requirements from food intake to medication to physiotherapy if required in consultation with the treating Doctor. A team of polite, trained staff will take care of associated requirements like insertion/removal of catheter, dressing, removal of stitches, insertion of feeding tubes etc. These services are a burden on family care givers as they are neither qualified nor competent at providing them at most times.</p></div>
+           <p>This is aimed at providing medical, nursing and associated services to patients post surgery at hospital or residence. A team of competent medical professionals monitor all daily requirements from food intake to medication to physiotherapy if required in consultation with the treating Doctor. A team of polite, trained staff will take care of associated requirements like insertion/removal of catheter, dressing, removal of stitches, insertion of feeding tubes etc. These services are a burden on family care givers as they are neither qualified nor competent at providing them at most times.</p>
+           <div class="hidden-service-content" >
+             <ul>
+               <li>Service 1</li><li>Service 2</li><li>Service 3</li><li>Service 4</li>
+             </ul>
+           </div>
+           <button class="expander">Show More...</button>
+         </div>
       </div>
 
      </div>
@@ -282,22 +299,30 @@ She also guided my daughters and me to cope up with the problems of the illness 
                  <label for="exampleInputText">Name</label>
                  <input type="text" class="form-control" id="exampleInputText">
                </div>
-               <div class="form-group">
-                 <label for="exampleInputEmail1">Email address</label>
-                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-              </div>
-               <div class="form-group">
+             <div class="form-group">
                  <label for="exampleInputNumber">Phone Number</label>
                  <input type="tel" data-bind="value:replyNumber" class="form-control" id="exampleInputNumber" >
 
                </div>
+               <div class="form-check">
+                    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                    <label class="form-check-label" for="exampleCheck1">Available on Whatsapp</label>
+               </div>
                <div class="form-group">
-                    <label for="exampleFormControlTextarea1">Describe your situation briefly... </label>
+                    <label for="exampleFormControlTextarea1">Tell us about your situation... </label>
                     <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
                     <small id="descHelp" class="form-text text-muted">( optional )</small>
                </div>
-               <div class="modal-footer">
-                    <button type="submit" class="btn btn-primary">Submit</button>
+
+              <button type="submit" class="btn">Submit</button>
+              <p>or contact directly on :</p>
+              <div class="contact-info">
+                <a class="modal-contact" href="tel:+91-9422-101610"><i class="fas fa-mobile-alt"></i> +91-9422-101610</a>
+                  <a class="modal-contact" href = "mailto: patient-care@monarai.com"><i class="fas fa-envelope"></i> patient-care@monarai.com</a>
+              </div>
+
+
+
            </div>
 
         </form>
