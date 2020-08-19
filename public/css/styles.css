@@ -525,7 +525,7 @@ z-index:2;
 .about-card-wrapper{
   grid-column: 2/span 3;
   margin-bottom: 0px;
-  margin-right: 30%;
+  margin-right: 8%;
   padding: 3%;
   z-index: 1;
 
@@ -738,19 +738,34 @@ text-align: center;
 
 
 
+
+  .navbar-brand {
+    font-size: 1.2rem;
+
+}
+
+
+
+
+
+  .navbar-brand img{
+    width: 60px;
+}
+
+  .navbar-light .navbar-nav .nav-link {
+    font-size: 1rem;
+  }
+
   .title-img{
     width:95%;
     min-width:475px;
-
-
-
-  }
+}
 
   .title-heading {
     margin-bottom: 35px;
-    font-size: 2.6rem;
+    font-size: 3rem;
     line-height: 1.5;
-    width:500px;
+    width:520px;
     font-family: 'Dancing Script', cursive;
 
 
@@ -761,12 +776,52 @@ text-align: center;
     font-size: 1.2rem;
   }
 
+  .service-card-wrapper{
+    display:grid;
+    grid-template-columns: 2fr 3fr;
+    margin:12px 2%;
+
+    align-items: center;
+    padding: 2%;
+    background-image: linear-gradient(-25deg, #FFADD3, #FFEFFE);
+
+    border-radius: 30px;
+
+
+  }
+
+  .service-card2-wrapper{
+    display:grid;
+    grid-template-columns: 3fr 2fr;
+    margin:12px 2%;
+    padding: 2%;
+    align-items: center;
+    background-image: linear-gradient(-25deg, #F8B3A2,  #FFE6DE);
+
+    border-radius: 30px;
+
+
+  }
+
+
+  .service-card3-wrapper{
+    display:grid;
+    grid-template-columns: 2fr 3fr;
+    margin:12px 2%;
+    margin-bottom: 70px;
+    padding: 2%;
+   align-items: center;
+    background-image: linear-gradient(-25deg, #F8DEA2, #FFF6DD);
+
+    border-radius: 30px;
+  }
+
   .service-content-wrapper p{
     padding:2%;
 
     font-weight: 100;
     font-size: 1.1rem;
-    line-height: 1.5;
+    line-height: 2;
     width: 95%;
     color: #000;
 
@@ -781,6 +836,100 @@ text-align: center;
     width: 95%;
     color: #000
   }
+
+
+
+   .about-wrapper{
+    display:grid;
+    grid-template-columns: repeat(4,1fr);
+    margin-top: 40px;
+    align-items: end;
+    margin-bottom: 100px;
+  }
+
+  .about-content-wrapper{
+
+    text-align: left;
+    padding:2%;
+    background-color: #fff;
+    border-radius: 20px;
+    -webkit-box-shadow: 0px 0px 60px -46px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 60px -46px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 60px -46px rgba(0,0,0,0.75);
+  }
+
+  .about-img-wrapper {
+
+  z-index:2;
+
+
+
+  }
+
+  .about-img-wrapper img{
+
+    width: 400px;
+
+    padding: 0;
+    transform: translateX(35%);
+
+
+  }
+
+  .about-card-wrapper{
+    grid-column: 2/span 4;
+    margin-bottom: 0px;
+    margin-right: 4%;
+    padding: 3%;
+    z-index: 1;
+
+      background-image: linear-gradient(-25deg, #FFADD3, #FFEFFE);
+    border-radius: 30px;
+
+
+  }
+
+  .about-content-wrapper {
+    z-index: 1;
+  }
+
+  .about-content-wrapper h4{
+    margin: 0 0 0 50px;
+    padding:2%;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.5;
+    width: 85%;
+    color: #000
+  }
+
+  .about-content-wrapper p{
+    margin: 0 10px 0 50px;
+    padding:2%;
+    font-weight: 300;
+    font-size: 1.1rem;
+    line-height: 2;
+
+
+  }
+
+  #testimonials p.comment{
+
+    line-height: 2;
+
+    font-size: 1.1rem;
+
+  }
+
+  #testimonials p.author{
+
+    font-size: 1.2rem;
+
+  }
+
+
+
+
 
 }
 
@@ -865,7 +1014,7 @@ text-align: center;
     margin: auto;
     margin-bottom: 40px;
     font-size: 2.3rem;
-    line-height: 1.5;
+    
     width:100%;
     font-family: 'Dancing Script', cursive;
 
@@ -877,7 +1026,7 @@ text-align: center;
     margin: auto;
     font-weight: 100;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 2;
     width: 96%;
     color: #000
 
@@ -1023,7 +1172,7 @@ text-align: center;
     text-align: center;
     font-weight: 100;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 2;
     width: 90%;
     color: #000;
 
@@ -1043,7 +1192,7 @@ text-align: center;
     text-align: center;
     font-weight: 500;
     font-size: 1.2rem;
-    line-height: 1.5;
+    line-height: 2;
     width: 90%;
     color: #000
   }
@@ -1116,7 +1265,7 @@ text-align: center;
     margin: auto;
     font-weight: 100;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 2;
     width: 95%;
     color: #000;
 
@@ -1128,7 +1277,7 @@ text-align: center;
     padding:2%;
     font-weight: 500;
     font-size: 1.2rem;
-    line-height: 1.5;
+    line-height: 2;
     width: 95%;
     color: #000
   }
