@@ -1,5 +1,7 @@
 AOS.init();
 
+
+
 if($(window).innerWidth > 768){
   $('body').css('padding-top', $('.navbar').outerHeight()+180 + 'px')
 }
