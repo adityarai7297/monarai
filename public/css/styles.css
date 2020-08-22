@@ -5,6 +5,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #FEFAF1;
+   overscroll-behavior-y: contain;
 
 }
 
@@ -540,6 +541,33 @@ z-index:2;
   border-radius: 30px;
   min-height: 700px;
 }
+
+.carousel {
+  position: relative;
+  width: 200px;
+  height: 100px;
+}
+
+
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  border: 2px solid #ffd60a;
+  border-radius: 8px;
+  background-color: #ffd60a;
+  padding: 12px;
+
+}
+
+.carousel-indicators{
+  height: 45px;
+}
+
+
+
+
+
+
 
 .testimonials-desktop{
 
