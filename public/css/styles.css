@@ -534,6 +534,7 @@ z-index:2;
 
 .carousel{
   display: none;
+  pause:'hover';
   background-image: linear-gradient(-25deg, #F8DEA2, #FFF6DD);
   margin: 100px;
   border-radius: 30px;
