@@ -5,7 +5,7 @@ body {
   padding: 0;
   margin: 0;
   background-color: #FEFAF1;
-   overscroll-behavior-y: none;
+   overscroll-behavior: none;
 
 }
 
@@ -1252,11 +1252,14 @@ text-align: center;
 
   .service-img{
     width:100%;
+
     min-width: 300px;
     margin-bottom: 8px;
     padding: 0;
 
   }
+
+
 
   .service-content-wrapper h4{
     padding:2% ;
@@ -1459,8 +1462,13 @@ text-align: center;
       width:100%;
   }
 
+  .modal-body button{
+      margin-bottom: 25px;
+  }
+
   .modal-body p{
-    margin: 0;
+
+    margin-bottom: 25px;
   }
 
       .service-modal .modal-content{
