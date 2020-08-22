@@ -645,7 +645,7 @@ z-index:2;
 #contact-modal .modal-dialog{
 
 margin: auto;
-  transform: translateY(20%);
+  transform: translateY(10%);
 
   font-family: 'Montserrat';
 
@@ -734,7 +734,11 @@ margin: auto;
 }
 
 .form-check{
-  margin-bottom: 45px;
+  margin-bottom: 20px;
+}
+
+.form-group label{
+  margin: 0;
 }
 
 .modal-body button{
@@ -753,7 +757,7 @@ margin: auto;
 }
 
 .modal-body p{
-  margin: 40px;
+  margin: 30px;
   margin-left: 0;
   font-size: 1.1rem;
 }
@@ -1433,7 +1437,7 @@ text-align: center;
   #contact-modal .modal-dialog{
 
   margin: auto;
-    transform: translateY(5%);
+    transform: translateY(0%);
     width:100%;
 }
 
