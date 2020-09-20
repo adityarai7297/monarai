@@ -31,6 +31,13 @@ p{
   color: white;
   font-size: 22px;
 }
+.icon-bar a:first-child{
+  border-radius: 20px 20px 0px 0px;
+}
+
+.icon-bar a:last-child{
+  border-radius: 0px 0px 20px 20px ;
+}
 
 .icon-bar a:hover {
   background-color:#9ED92D;
@@ -481,8 +488,7 @@ box-shadow: 0px 0px 60px -46px rgba(0,0,0,0.75);
 }
 
 .about-wrapper{
-  display:grid;
-  grid-template-columns: repeat(3,1fr);
+  display:flex;
   margin-top: 40px;
   align-items: end;
   margin-bottom: 100px;
@@ -514,13 +520,14 @@ z-index:2;
   width: 500px;
   min-width: 450px;
   padding: 0;
-  transform: translateX(45%);
+  transform: translateX(25%);
+
 
 
 }
 
 .about-card-wrapper{
-  grid-column: 2/span 3;
+
   margin-bottom: 0px;
   margin-right: 8%;
   padding: 3%;
@@ -530,25 +537,10 @@ z-index:2;
   border-radius: 30px ;
 }
 
-.about-card-wrapper:last-child{
-  background-image: linear-gradient(-25deg, #FFADD3, #fcb8d7);
-  grid-column: 1/span 3;
-  width: 90%;
-  padding: 2%;
-  border-radius: 30px ;
-  margin: auto;
-}
 
-.about-card-wrapper:last-child h4{
-  width: 95%;
-  margin: 0 ;
-  padding-bottom: 0;
-}
 
-.about-card-wrapper:last-child p{
-  width: 98%;
-  margin: 0 ;
-}
+
+
 
 
 .about-content-wrapper {
@@ -556,22 +548,22 @@ z-index:2;
 }
 
 .about-content-wrapper h4{
-  margin: 0 0 0 80px;
+  margin: 0;
   padding:2%;
   font-weight: 500;
   font-size: 1.4rem;
   line-height: 1.5;
-  width: 85%;
+  width: 95%;
   color: #000
 }
 
 .about-content-wrapper p{
-  margin: 0 10px 0 80px;
+  margin: 0 ;
   padding:2%;
   font-weight: 300;
   font-size: 1.2rem;
   line-height: 1.75;
-  width: 85%;
+  width: 95%;
   color: #000;
 
 }
@@ -1008,11 +1000,9 @@ text-align: center;
 
 
    .about-wrapper{
-    display:grid;
-    grid-template-columns: repeat(4,1fr);
-    margin-top: 40px;
-    align-items: end;
-    margin-bottom: 100px;
+    display:flex;
+
+
   }
 
   .about-content-wrapper{
@@ -1039,14 +1029,14 @@ text-align: center;
     width: 400px;
 
     padding: 0;
-    transform: translateX(35%);
+
 
 
   }
 
   .about-card-wrapper{
-    grid-column: 2/span 4;
-    margin-bottom: 0px;
+
+
     margin-right: 4%;
     padding: 3%;
     z-index: 1;
@@ -1057,32 +1047,24 @@ text-align: center;
 
   }
 
-  .about-card-wrapper:last-child{
-    background-image: linear-gradient(-25deg, #ffc7e0, #ffc7e0);
 
-
-
-    margin:0 12px;
-    grid-column: 1/span 4;
-
-  }
 
   .about-content-wrapper {
     z-index: 1;
   }
 
   .about-content-wrapper h4{
-    margin: 0 0 0 50px;
+    margin: 0 ;
     padding:2%;
     font-weight: 500;
     font-size: 1.2rem;
     line-height: 1.5;
-    width: 85%;
+    width: 95%;
     color: #000
   }
 
   .about-content-wrapper p{
-    margin: 0 10px 0 50px;
+    margin: 0 ;
     padding:2%;
     font-weight: 300;
     font-size: 1.1rem;
@@ -1126,6 +1108,8 @@ text-align: center;
 
 @media only screen and (max-width: 768px) {
 
+
+
   .icon-bar a {
     padding: 16px;
     font-size: 16px;
@@ -1153,11 +1137,21 @@ text-align: center;
 
   }
 
+.navbar-toggler-icon{
+width: 22px;
+
+}
 
 
   .navbar-brand img{
     width: 40px;
 
+
+  }
+
+  .navbar-nav  a{
+    text-align: right;
+    margin: 10px;
 
   }
 
@@ -1241,10 +1235,10 @@ text-align: center;
        display: block;
        margin: auto;
        margin-top: 45px;
-       padding: 25px 30px;
+       padding: 20px 20px;
        border-radius: 30px;
       background: #E7FF83;
-      width: 90%;
+      width: 70%;
   }
 
 
@@ -1262,36 +1256,13 @@ text-align: center;
 
   }
 
-  .background{
-    margin-bottom: 8px
-  }
 
-  h2.background {
-    position: relative;
-    z-index: 1;
-  }
-  h2.background:before {
-    border-top: 2px solid #dfdfdf;
-    content: "";
-    margin: 0 auto;
-    /* this centers the line to the full width specified */
-    position: absolute;
-    /* positioning must be absolute here, and relative positioning must be applied to the parent */
-    top: 55%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    width: 75%;
-    z-index: -1;
-  }
 
   h2.background span {
     /* to hide the lines from behind the text, you have to set the background color the same as the container */
-    background: #FEFAF1;
-    padding: 0 20px;
-    font-size: 1.4rem;
-    font-weight: 500;
-    text-align: center;
+
+    font-size: 1.2rem;
+
   }
 
   .service-card-wrapper{
@@ -1422,7 +1393,7 @@ text-align: center;
 
   .about-img-wrapper img{
 
-    width: 50%;
+    width: 45%;
     min-width: 350px;
     padding: 0;
     transform: translateX(20px);
@@ -1432,10 +1403,10 @@ text-align: center;
 
   .about-card-wrapper{
 
-    margin-bottom: 0px;
+
     margin-right: 0px;
     padding: 4%;
-    padding-bottom:0px;
+
     z-index: 1;
     background-image: linear-gradient(-25deg, #FFADD3, #FFEFFE);
     border-radius: 0px;
@@ -1443,14 +1414,7 @@ text-align: center;
 
   }
 
-  .about-card-wrapper:last-child{
-    background-image: linear-gradient(-25deg, #FFADD3, #ffcfe5);
-    grid-column: 1/span 3;
-    width: 100%;
-    border-radius: 0px;
 
-    margin: auto;
-  }
 
   .about-content-wrapper {
     z-index: 1;
@@ -1525,8 +1489,8 @@ text-align: center;
   }
 
   .carousel-img{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
 
   }
