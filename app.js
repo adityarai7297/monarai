@@ -18,6 +18,21 @@ app.get("/",function(req,res){
   res.sendFile(__dirname+"/index.html");
 });
 
+app.get("/palliative-care", function(req,res){
+  res.sendFile(__dirname+"/palliative.html")
+
+})
+
+app.get("/elderly-care", function(req,res){
+  res.sendFile(__dirname+"/elderly.html")
+
+})
+
+app.get("/comfort-care", function(req,res){
+  res.sendFile(__dirname+"/comfort.html")
+
+})
+
 
 app.get("/blog", function(req,res){
   res.sendFile(__dirname+"/blog.html")
