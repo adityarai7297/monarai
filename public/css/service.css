@@ -12,6 +12,7 @@ p{
   font-family: 'Roboto Condensed', sans-serif;
 }
 
+
 .icon-bar {
   position: fixed;
   bottom: 0px;
@@ -22,37 +23,13 @@ p{
   transform: translateY(-50%);
 }
 
-.icon-bar a {
-  display: block;
-  text-align: center;
-  padding: 20px;
-  transition: all 0.3s ease;
-  color: white;
-  font-size: 22px;
-}
-.icon-bar a:first-child{
-  border-radius: 20px 20px 0px 0px;
-}
 
-.icon-bar a:last-child{
-  border-radius: 0px 0px 20px 20px ;
-}
-
-.icon-bar a:hover {
-  background-color:#9ED92D;
-}
-
-.icon-style {
-  background:  #55ACEE;
-  color: white;
-  opacity: 0.8;
-}
 
 
  /* ------------------------ Navbar -------------------------*/
 
  .navbar {
-   margin-bottom: 60px;
+
    padding: 5px 35px;
    background-color: #FEFAF1;
    opacity: 0.9;
@@ -144,26 +121,29 @@ p{
    transform: translateY(-10px);
  }
 
-.body-wrapper{
+.hero-wrapper{
   display: grid;
   grid-template-columns: auto auto;
 }
 
 
-.text-wrapper{
+.title-wrapper{
   text-align: left;
-  padding : 30px;
+  padding : 45px;
   padding-top: 0;
+
 }
 
 
 
 .title {
 margin-bottom: 30px;
+color: #AAD650;
 }
 
 p{
 font-size: 1.4rem;
+padding-bottom: 30px;
 }
 
 .image{
@@ -171,8 +151,9 @@ font-size: 1.4rem;
   margin : 30px;
 }
 
- img{
-width:92%;
+.header-wrapper img{
+width:97%;
+min-width:350px;
 height: auto;
 border-radius: 20px;
 -webkit-box-shadow: 0px 0px 60px -46px rgba(0,0,0,0.75);
@@ -180,21 +161,119 @@ border-radius: 20px;
 box-shadow: 0px 0px 60px -46px rgba(0,0,0,0.75);
 }
 
-.content-wrapper{
-
+.title-wrapper li{
+  font-family: 'Roboto Condensed', sans-serif;
+}
+.list-wrapper-3col{
+  display: flex;
+  margin: auto;
 }
 
-
+.list-wrapper-2col{
+  display: none;
 }
 
 ul{
+list-style-image: url('/images/check.png');
+padding-right: 25px;
 
 }
 
 li{
+font-size: 1.4rem;
+margin: 15px 0;
+}
+
+
+
+@media only screen and (max-width: 1308px) {
+  .title {
+  font-size: 2.2rem;
+  margin-top: 20px;
+  }
+
+  p{
+  font-size: 1.2rem;
+  padding-bottom: 10px;
+  margin-bottom: 0;
+
+  }
+
+
+
+
+  li{
+  font-size: 1.2rem;
+}
+
+/* i want 2 columns here */
+@media only screen and (max-width: 900px) {
+
+  .navbar-brand img{
+    width: 70px;
+}
+
+.navbar {
+padding: 5px 25px;
+}
+
+
+.navbar-brand {
+  font-size: 1.2rem;
+
+  margin: 12px;
+
 
 }
 
-button{
+.hero-wrapper{
+  grid-template-columns: auto;
+}
+
+
+.title-wrapper{
+  text-align: left;
+  padding-bottom: :0px;
+  padding-top: 0;
+}
+
+.list-wrapper ul:last-child{
+  display: block;
+}
+
+
+
+}
+
+@media only screen and (max-width: 690px) {
+  .list-wrapper-2col{
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+
+.list-wrapper-3col{
+  display: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
