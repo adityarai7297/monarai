@@ -26,10 +26,10 @@ p{
 .icon-bar a {
   display: block;
   text-align: center;
-  padding: 20px;
+  padding: 18px 14px;
   transition: all 0.3s ease;
   color: white;
-  font-size: 22px;
+  font-size: 18px;
 }
 .icon-bar a:first-child{
   border-radius: 20px 20px 0px 0px;
@@ -48,7 +48,9 @@ p{
   color: white;
   opacity: 0.8;
 }
-
+.icon-bar i{
+  margin-right: 15px;
+}
 
 
 
@@ -334,7 +336,7 @@ body.modal-open .body-wrapper{
   font-size: 1rem;
   padding: 8px 16px;
   color: #000;
-  margin: 2% 2%;
+  margin: 12px
 
  text-decoration: none;
   border: none;
@@ -1112,8 +1114,8 @@ text-align: center;
 
 
   .icon-bar a {
-    padding: 16px;
-    font-size: 16px;
+    padding: 20px;
+    font-size: 20px;
   }
 
 
