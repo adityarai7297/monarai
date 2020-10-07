@@ -191,12 +191,14 @@ a.contact{
   font-size: 1.2rem;
   padding: 14px 16px;
   color: #fff;
-  margin: 10px;
+  margin: 6px;
   background-color:#AAD650;
 text-decoration: none;
   border: none;
   border-radius: 20px;
 }
+
+
 
 .contact i{
   margin-right: 8px;
