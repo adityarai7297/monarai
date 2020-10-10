@@ -3,6 +3,7 @@ body {
   font-family: "Montserrat";
   text-align: center;
   padding: 0;
+  padding-top: 120px;
   margin: 0;
   background-color: #FEFAF1;
 
@@ -86,6 +87,7 @@ body.modal-open .body-wrapper{
   position: fixed;
   top: 0;
   width: 100%;
+
 }
 
 

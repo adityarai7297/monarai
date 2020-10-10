@@ -1,6 +1,6 @@
 
 $('body').css({
- "padding-top": $(".navbar").height()+45 + "px"
+ "padding-top": $(".navbar").height() + "px"
 });
 window.onload = function() {
   var navbar = document.getElementById("navbar");
