@@ -5,9 +5,10 @@ body {
   padding: 0;
   margin: 0;
   background-color: #FEFAF1;
-   overscroll-behavior: none;
+
 
 }
+
 
 p{
   font-family: 'Roboto Condensed', sans-serif;
@@ -72,10 +73,15 @@ body.modal-open .body-wrapper{
 /* ----------------------------------- Navbar ---------------------------------- */
 
 .navbar {
-  margin-bottom: 60px;
+
   padding: 5px 35px;
   background-color: #FEFAF1;
   opacity: 0.9;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10000;
 
 }
 
@@ -101,19 +107,7 @@ body.modal-open .body-wrapper{
 }
 
 
-.smart-scroll{
-  position: fixed;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 1030;
-}
-.scrolled-down{
-   transform:translateY(-100%); transition: all 0.4s ease-in-out;
-}
-.scrolled-up{
-   transform:translateY(0); transition: all 0.4s ease-in-out;
-}
+
 
 .navbar-brand:hover{
   transform: translateX(10px);
@@ -211,6 +205,7 @@ body.modal-open .body-wrapper{
 .title-img{
   width:600px;
   max-width:1000px;
+  z-index: -1;
 
 
 
@@ -367,7 +362,7 @@ body.modal-open .body-wrapper{
 
 h2.background {
   position: relative;
-  z-index: 0;
+  z-index: -1;
 }
 h2.background:before {
   border-top: 2px solid #dfdfdf;
@@ -512,7 +507,7 @@ box-shadow: 0px 0px 60px -46px rgba(0,0,0,0.75);
 
 .about-img-wrapper {
 
-z-index:2;
+z-index:-1;
 
 
 
@@ -534,7 +529,7 @@ z-index:2;
   margin-bottom: 0px;
   margin-right: 8%;
   padding: 3%;
-  z-index: 1;
+  z-index: -1;
 
   background-image: linear-gradient(-25deg, #FFADD3, #FFEFFE);
   border-radius: 30px ;
@@ -547,7 +542,7 @@ z-index:2;
 
 
 .about-content-wrapper {
-  z-index: 1;
+  z-index: -1;
 }
 
 .about-content-wrapper h4{
@@ -1021,7 +1016,7 @@ text-align: center;
 
   .about-img-wrapper {
 
-  z-index:2;
+  z-index:-1;
 
 
 
@@ -1042,7 +1037,7 @@ text-align: center;
 
     margin-right: 4%;
     padding: 3%;
-    z-index: 1;
+    z-index: -1;
 
     background-image: linear-gradient(-25deg, #FFADD3, #FFEFFE);
     border-radius: 30px;
@@ -1053,7 +1048,7 @@ text-align: center;
 
 
   .about-content-wrapper {
-    z-index: 1;
+    z-index: -1;
   }
 
   .about-content-wrapper h4{
@@ -1388,7 +1383,7 @@ width: 22px;
 
   .about-img-wrapper {
 
-  z-index:2;
+  z-index:-1;
 
 
 
@@ -1410,7 +1405,7 @@ width: 22px;
     margin-right: 0px;
     padding: 4%;
 
-    z-index: 1;
+    z-index: -1;
     background-image: linear-gradient(-25deg, #FFADD3, #FFEFFE);
     border-radius: 0px;
 
@@ -1420,7 +1415,7 @@ width: 22px;
 
 
   .about-content-wrapper {
-    z-index: 1;
+    z-index: -1;
   }
 
   .about-content-wrapper p{
