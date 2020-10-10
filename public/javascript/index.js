@@ -1,8 +1,8 @@
-AOS.init();
+
 $('body').css({
  "padding-top": $(".navbar").height()+45 + "px"
 });
-window.onscroll = function() {
+window.onload = function() {
   var navbar = document.getElementById("navbar");
   navbar.classList.add("sticky")
 
