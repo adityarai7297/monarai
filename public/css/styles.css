@@ -79,7 +79,8 @@ body.modal-open .body-wrapper{
   background-color: #FEFAF1;
   opacity: 0.9;
   overflow: hidden;
-  z-index: 10000;
+  z-index: 1;
+
 
 }
 
@@ -89,6 +90,9 @@ body.modal-open .body-wrapper{
   width: 100%;
 
 }
+
+
+
 
 
 
